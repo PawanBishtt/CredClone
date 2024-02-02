@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(/fonts/Gilroy-Regular.woff);
+}
+
+@font-face {
+    font-family: gilroyb;
+    src: url(/fonts/Gilroy-Bold.woff);
+}
+
+@font-face {
+    font-family: gilroysb;
+    src: url(/fonts/Gilroy-SemiBold.woff);
+}
+
+.partone {
+    padding-bottom: 15vw;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 13vw;
+}
+
+nav img {
+    width: 3.2vw;
+}
+
+.nav-r {
+    display: flex;
+    gap: 3vw;
+}
+
+.nav-r a {
+    color: rgba(255, 255, 255, 0.801);
+    text-decoration: none;
+    font-family: gilroysb;
+    font-size: 19px;
+}
+
+.nav-r i {
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0vw;
+}
+
+.main h1 {
+    font-size: 6.5vw;
+    color: white;
+    font-family: gilroyb;
+}
+
+.main h5 {
+    color: white;
+    font-size: 2vw;
+    font-family: gilroyb;
+    margin-top: 2vw;
+}
+
+.main button {
+    background-color: white;
+    border: none;
+    font-size: 1.5vw;
+    font-family: gilroysb;
+    padding: 1vw 3vw;
+    border-radius: 50px;
+    margin-top: 4vw;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.main button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.parttwo {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+
+#phone3 {
+    position: absolute;
+    bottom: -3vw;
+    z-index: 3;
+}
+
+#phone2,
+#phone4 {
+    margin-bottom: -8vw;
+    z-index: 2;
+    transition: all ease;
+}
+
+#phone1,
+#phone5 {
+    margin-bottom: -13vw;
+    z-index: 1;
+    transition: all ease;
+}
+
+#phone1 {
+    margin-right: -11vw;
+}
+
+#phone5 {
+    margin-left: -11vw;
+}
+
+.partthree {
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10vw 13vw;
+}
+
+.partthree h1 {
+    font-size: 6.5vw;
+    font-family: gilroyb;
+}
+
+.partthree h1:nth-child(2) {
+    margin-top: -1vw;
+}
+
+.partthree h5 {
+    font-size: 2vw;
+    font-family: gilroyb;
+}
+
+.partthree p {
+    font-family: gilroysb;
+    font-size: 1.2vw;
+}
+
+.partthree button {
+    background-color: white;
+    border: none;
+    font-size: 1.5vw;
+    font-family: gilroyb;
+    padding: 1.5vw 5vw;
+    border-radius: 50px;
+    margin-top: 2vw;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.partthree button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.logos {
+    width: 80%;
+    height: 20vh;
+    margin: 0 auto;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/brands-desktop.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.partfour {
+    padding-top: 4vw;
+}
+
+.partfour h5 {
+    margin-left: 9.5vw;
+    margin-bottom: -1vw;
+    font-size: 1.5vw;
+    font-family: gilroysb;
+}
+
+.partfive {
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10vw 13vw;
+}
+
+.partfive h1 {
+    font-size: 6.5vw;
+    font-family: gilroyb;
+}
+
+.partfive h1:nth-child(2) {
+    margin-top: -1vw;
+}
+
+.partfive h5 {
+    font-size: 2vw;
+    font-family: gilroyb;
+}
+
+.partfive p {
+    font-family: gilroysb;
+    font-size: 1.2vw;
+}
+
+.partfive button {
+    background-color: white;
+    border: none;
+    font-size: 1.5vw;
+    font-family: gilroyb;
+    padding: 1.5vw 5vw;
+    border-radius: 50px;
+    margin-top: 2vw;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.partfive button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.part-6 {
+    height: 130vh;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+}
+
+.six-left {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 14vw;
+    position: relative;
+}
+
+.six-left h1 {
+    font-size: 6.5vw;
+    font-family: gilroyb;
+}
+
+.six-left p {
+    font-family: gilroysb;
+    font-size: 1.2vw;
+}
+
+.six-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    position: absolute;
+}
+
+.two,
+.three,
+.four {
+    opacity: 0;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    width: 22vw;
+    height: 80vh;
+    box-shadow: rgba(250, 250, 255, 0.16) 0px -5px 6px 0px inset, rgba(38, 37, 37, 0.24) 4px 6px 11px 1px inset;
+    border-radius: 46px;
+    overflow: hidden;
+}
+
+.phone img {
+    width: 100%;
+    height: 100%;
+}
+
+#img-1 {
+    margin-left: 7px;
+}
+
+.part-7 {
+    height: 70vh;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/neopop-image-mock.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.part-8 {
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/security-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10vw 13vw;
+}
+
+.part-8 h1 {
+    font-size: 6.5vw;
+    font-family: gilroyb;
+}
+
+.part-8 h1:nth-child(2) {
+    margin-top: -1vw;
+}
+
+.part-8 h5 {
+    font-size: 2vw;
+    font-family: gilroyb;
+}
+
+.part-8 p {
+    font-family: gilroysb;
+    font-size: 1.2vw;
+}
+
+.part-8 button {
+    background-color: white;
+    border: none;
+    font-size: 1.5vw;
+    font-family: gilroyb;
+    padding: 1.5vw 5vw;
+    border-radius: 50px;
+    margin-top: 2vw;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.part-8 button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.part-9 {
+    min-height: 100vh;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/trust-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 12vw;
+}
+
+.part-9 h1 {
+    font-size: 4vw;
+    color: #E0ECE9;
+    font-family: gilroyb;
+}
+
+.part-9 p {
+    font-size: 1.2vw;
+    line-height: 2vw;
+}
+
+.part-10 {
+    min-height: 100vh;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10vw 0vw;
+}
+
+.stores {
+    display: flex;
+    gap: 5vw;
+}
+
+.ten-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 18vw;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.rating h1 {
+    font-size: 11vw;
+    font-family: gilroyb;
+    color: #E7E7E7;
+}
+
+.rating h5 {
+    font-size: 4vw;
+    font-family: gilroyb;
+    color: #D6D4D5;
+}
+
+.stars i {
+    font-size: 2vw;
+    color: #E7E7E7;
+}
+
+.ten-left button,
+.ten-right button {
+    padding: 0.7vw 3vw;
+    font-size: 1.3vw;
+    border-radius: 50px;
+    border: none;
+    font-family: gilroyb;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #212325;
+    background-color: white;
+    margin-top: 3vw;
+    cursor: pointer;
+}
+
+.ten-left button i,
+.ten-right button i {
+    font-size: 3vw;
+    color: #212325;
+}
+
+.ten-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+/* swiper */
+
+.slider {
+    width: 60%;
+    height: 30vh;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: silver;
+}
+
+
+/* media queries */
+
+@media (max-width:600px) {
+    .nav-r a {
+        display: none;
+    }
+
+    .nav-r i {
+        font-size: 10vw;
+    }
+
+    nav img {
+        width: 10vw;
+    }
+
+    nav {
+        padding: 15vw 10vw;
+    }
+
+    .main {
+        align-items: start;
+        padding: 80vw 10vw;
+    }
+
+    .partone {
+        height: 100vh;
+    }
+
+    .main h1 {
+        font-size: 13vw;
+        line-height: 10vw;
+    }
+    
+    .main h5 {
+        font-size: 4vw;
+        margin-top: 10vw;
+    }
+    
+    .main button {
+        font-size: 4vw;
+        padding: 4vw 6vw;
+        margin-top: 10vw;
+    }
+    
+    .parttwo img {
+        width: 40%;
+    }
+
+    .parttwo {
+        min-height: 50vh;
+    }
+
+    .partthree {
+        min-height: 100vh;
+        padding: 40vw 10vw 30vw 10vw;
+        background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/deserve-more-bg-mobile.jpg);
+    }
+
+    .partthree h1 {
+        font-size: 15vw;
+    }
+    
+    .partthree h5 {
+        font-size: 4.5vw;
+    }
+    
+    .partthree p {
+        font-size: 4vw;
+        font-family: gilroy;
+        margin-top: 100vw;
+        line-height: 5vw;
+    }
+    
+    .partthree button {
+        font-size: 4vw;
+        padding: 4vw 6vw;
+        margin-top: 10vw;
+    }
+    
+    .logos {
+        height: 40vh;
+        background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/brands-mobile.png);
+    }
+
+    .partfour h5 {
+        font-size: 4.5vw;
+    }
+
+    .partfour {
+        padding-top: 15vw;
+    }
+
+    .partfive {
+        min-height: 100vh;
+        padding-top: 100vw;
+        background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg-mobile.jpg);
+    }
+
+    .partfive h1 {
+        font-size: 13vw;
+        line-height: 12vw;
+    }
+    
+    .partfive h5 {
+        font-size: 4.5vw;
+        margin-top: 4vw;
+    }
+    
+    .partfive p {
+        font-size: 3.5vw;
+        font-family: gilroy;
+        line-height: 5vw;
+        margin-top: 30%;
+    }
+    
+    .partfive button {
+        font-size: 4vw;
+        padding: 4vw 6vw;
+        margin-top: 10vw;
+    }
+
+    .phone {
+        width: 100%;
+        height: 40%;
+    }
+
+    .six-right {
+        padding-right: 5vw;
+    }
+
+    .part-8 {
+        min-height: 100vh;
+        padding: 40vw 10vw 30vw 10vw;
+        background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/security-bg-mobile.jpg);
+    }
+
+    .part-8 h1 {
+        font-size: 15vw;
+    }
+    
+    .part-8 h5 {
+        font-size: 4.5vw;
+    }
+    
+    .part-8 p {
+        font-size: 4vw;
+        font-family: gilroy;
+        margin-top: 100vw;
+        line-height: 5vw;
+    }
+    
+    .part-8 button {
+        font-size: 4vw;
+        padding: 4vw 6vw;
+        margin-top: 10vw;
+    }
+
+    .part-9 {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 40vw;
+        padding: 15vw 10vw;
+    }
+    
+    .part-9 h1 {
+        font-size: 12vw;
+    }
+    
+    .part-9 p {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .stores {
+        flex-direction: column;
+        align-items: start;
+        padding-left: 10vw;
+        gap: 15vw;
+    }
+
+    .ten-left {
+        padding-left: 0;
+    }
+
+    .rating h1 {
+        font-size: 25vw;
+    }
+    
+    .rating h5 {
+        font-size: 10vw;
+    }
+    
+    .stars i {
+        font-size: 5vw;
+    }
+    
+    .ten-left button,
+    .ten-right button {
+        padding: 3vw 5vw;
+        font-size: 3vw;
+    }
+    
+    .swiper-slide {
+        text-align: start;
+    }
+    
+    .slider {
+        margin: 10vw 0vw;
+        width: 90%;
+        padding-left: 10vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* lenis */
+
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
